@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css"/>
+            <title>Form</title>
+        </head>
+        <body>
+        <header>
+            <h1>Universidad de San Carlos de Guatemala</h1>
+                    <p>Luis Mariano Moreira García 202010770</p>
+            <form>
+        </header>
+        <div>
+        <form>
+        
+            <section>
+            <p>nombre:</p>
+            </section>
+            
+            <section class="Inputs">
+                <label for="nombre">Nombre</label>
+                <input type="" id="1" name="nombre" placeholder="Ingrese nombre"/>
+            </section>
+            <section class="Radio"><label for="0">Sexo</label>
+                <input type="radio" id="masculino" name="0">Masculino
+                
+                <input type="radio" id="femenino" name="0">Femenino
+                </section>
+            <section class="Selector">
+                <label for="select">Pais</label>
+                <select name="select" id=2>
+            
+                    <option value="1">Guatemala</option>
+            
+                    <option value="2">El salvador</option>
+            
+                    <option value="3">Honduras</option>
+            
+                    <option value="4">Mexico</option>
+            </select></section>
+            <section class="Buttons">
+                <button type="button" onclick="showDocument()">Validar</button>
+            </section>
+            
+
+        <section>
+            <textarea name="information" id="doc" cols="100" rows="40" hidden>formulario~>>[   
+   <
+      tipo:"etiqueta",
+      valor: "Nombre:"
+    >,
+    <
+      tipo:"texto",
+      valor: "Nombre",
+      fondo: "Ingrese nombre"
+    >,
+    <
+      tipo:"grupo-radio",
+      valor: "sexo",
+      valores:['Masculino','Femenino']
+    >,
+    <
+      tipo:"grupo-option",
+      valor: "pais",
+      valores:['Guatemala','El Salvador','Honduras','Mexico']
+    >, 
+    <
+       tipo:"boton",
+       valor: "validar",
+       evento: entrada
+     >
+]    </textarea>
+        </section>
+
+        <section>
+            <textarea name="information" id="answers" cols="100" rows="40" hidden></textarea>
+        </section>
+
+        <script>
+            function showDocument(){
+                let formDocument= document.getElementById('doc');
+                formDocument.removeAttribute('hidden');
+            }
+        </script>
+
+        </form>
+        </div>
+        <footer>
+        </footer>
+        </body>
+        <script> src="buttons.js" </script>
+        </html>
+        

@@ -1,0 +1,45 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #efefef;
+    color:black;
+    margin:0;
+}
+header{
+    padding:2rem 1rem 1rem;
+    background-color: black;
+    color: white;
+    
+    
+}
+div{
+    width: 900px;
+    margin: 0 auto;
+
+    position: absolute;
+    top:30%;
+    Left:0%;
+    right: 0%;
+}
+
+.Radio{
+    padding:2rem 1rem;
+
+}
+
+.Inputs{
+    padding:2rem 1rem;
+}
+
+.Buttons{
+    text-align: center;
+    padding:2rem 1rem;
+}
+
+.Selector{
+    padding:2rem 1rem;
+}
+
+
+
+
+
